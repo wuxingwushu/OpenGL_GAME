@@ -1,0 +1,124 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1101,5): warning MSB8027: 名为 glad.c 的两个或更多文件将生成到同一位置的输出。这会导致错误的生成结果。   调用的文件是 glad.c, Read\glad.c。
+  block.cpp
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Block\block.cpp(126,20): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Block\block.cpp(199,58): warning C4267: “=”: 从“size_t”转换到“long”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Block\block.cpp(201,39): warning C4267: “=”: 从“size_t”转换到“long”，可能丢失数据
+  blocks.cpp
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Block\blocks.h(3,1): warning C4005: “GLEW_STATIC”: 宏重定义
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Block\blocks.h(3,1): message : 之前在命令行上声明的“GLEW_STATIC”
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Block\blocks.cpp(18,25): warning C4018: “<”: 有符号/无符号不匹配
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Block\blocks.cpp(35,25): warning C4018: “<”: 有符号/无符号不匹配
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Block\blocks.cpp(40,25): warning C4018: “<”: 有符号/无符号不匹配
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Block\blocks.cpp(71,23): warning C4018: “<”: 有符号/无符号不匹配
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Block\blocks.cpp(425,29): warning C4244: “=”: 从“T”转换到“int”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Block\blocks.cpp(426,29): warning C4244: “=”: 从“T”转换到“int”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Block\blocks.cpp(427,29): warning C4244: “=”: 从“T”转换到“int”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Block\blocks.cpp(653,30): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Block\blocks.cpp(692,31): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Block\blocks.cpp(693,31): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Block\blocks.cpp(695,25): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\type_traits(1578,77): warning C4244: “参数”: 从“unsigned __int64”转换到“int”，可能丢失数据
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\thread(55,1): message : 查看对正在编译的函数 模板 实例化“void std::invoke<void(__cdecl block::* )(int,int,int),block*,unsigned __int64,unsigned __int64,unsigned __int64>(_Callable &&,_Ty1 &&,unsigned __int64 &&,unsigned __int64 &&,unsigned __int64 &&) noexcept(false)”的引用
+          with
+          [
+              _Callable=void (__cdecl block::* )(int,int,int),
+              _Ty1=block *
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\thread(62,1): message : 查看对正在编译的函数 模板 实例化“unsigned int std::thread::_Invoke<_Tuple,0,1,2,3,4>(void *) noexcept”的引用
+          with
+          [
+              _Tuple=_Tuple
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\thread(69,1): message : 查看对正在编译的函数 模板 实例化“unsigned int (__cdecl *std::thread::_Get_invoke<_Tuple,0,1,2,3,4>(std::integer_sequence<size_t,0,1,2,3,4>) noexcept)(void *)”的引用
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.34.31933\include\thread(90,1): message : 查看对正在编译的函数 模板 实例化“void std::thread::_Start<_Ty,block*&,unsigned __int64,unsigned __int64,unsigned __int64>(_Fn &&,block *&,unsigned __int64 &&,unsigned __int64 &&,unsigned __int64 &&)”的引用
+          with
+          [
+              _Ty=void (__cdecl block::* )(int,int,int),
+              _Fn=void (__cdecl block::* )(int,int,int)
+          ]
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Block\blocks.cpp(440,216): message : 查看对正在编译的函数 模板 实例化“std::thread::thread<void(__cdecl block::* )(int,int,int),block*&,size_t,size_t,size_t,0>(_Fn &&,block *&,size_t &&,size_t &&,size_t &&)”的引用
+          with
+          [
+              _Fn=void (__cdecl block::* )(int,int,int)
+          ]
+  Camera.cpp
+  sky.cpp
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Environment\sky.h(2,1): warning C4005: “GLEW_STATIC”: 宏重定义
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Environment\sky.h(2,1): message : 之前在命令行上声明的“GLEW_STATIC”
+  PerlinNoise.cpp
+  LightDirectional.cpp
+  LightPoint.cpp
+  LightSpot.cpp
+  Mesh.cpp
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Mesh\Mesh.cpp(42,63): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+  Model.cpp
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Mesh\Model.cpp(15,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Mesh\Model.cpp(20,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Mesh\Model.cpp(32,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Mesh\Model.cpp(55,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Mesh\Model.cpp(57,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Mesh\Model.cpp(78,20): warning C4018: “<”: 有符号/无符号不匹配
+  Material.cpp
+  Shader.cpp
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Read\Shader.cpp(7,1): warning C4005: “GLEW_STATIC”: 宏重定义
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\Read\Shader.cpp(7,1): message : 之前在命令行上声明的“GLEW_STATIC”
+  源.cpp
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(1,1): warning C4005: “GLEW_STATIC”: 宏重定义
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(1,1): message : 之前在命令行上声明的“GLEW_STATIC”
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(178,61): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(430,33): warning C4838: 从“FT_Pos”转换到“GLuint”需要收缩转换
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(578,32): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(582,31): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(591,32): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(595,31): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(604,32): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(608,31): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(617,32): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(629,47): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(630,26): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(631,47): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(632,26): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(633,47): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(634,26): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(636,37): warning C4018: “>”: 有符号/无符号不匹配
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(650,47): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(651,26): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(652,47): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(653,26): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(654,47): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(655,26): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(657,37): warning C4018: “>”: 有符号/无符号不匹配
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(677,18): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(678,18): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(681,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(682,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(684,14): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(685,14): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(761,27): warning C4244: “=”: 从“GLdouble”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(762,27): warning C4244: “=”: 从“GLdouble”转换到“float”，可能丢失数据
+D:\文件2\OpenGL_Game\Game_Demo\Game_Demo\源.cpp(763,27): warning C4244: “=”: 从“GLdouble”转换到“float”，可能丢失数据
+  正在生成代码...
+  glad.c
+  glad.c
+  正在生成代码...
+block.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/INCREMENTAL:NO”规范)
+x64\Debug\glad.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+glew32s.lib(glew.obj) : warning LNK4099: 未找到 PDB“”(使用“glew32s.lib(glew.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+  Game_Demo.vcxproj -> D:\文件2\OpenGL_Game\Game_Demo\x64\Debug\Game_Demo.exe

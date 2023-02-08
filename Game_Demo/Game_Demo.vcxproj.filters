@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\Block">
+      <UniqueIdentifier>{d35538a9-29e5-45ef-98e4-c7153d6ee345}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Control">
+      <UniqueIdentifier>{c253063f-a257-4bc2-b9f0-8f56756b165c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Environment">
+      <UniqueIdentifier>{93df5059-0b78-4248-93ea-5086dad8babc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Generate">
+      <UniqueIdentifier>{c8258e77-0d41-4d0d-bf77-36810625d8b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Light">
+      <UniqueIdentifier>{fa88ef5b-52af-4a31-bb5a-90500c2e3f91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Mesh">
+      <UniqueIdentifier>{5094ef24-51db-4227-bb4f-aa3da4ae79af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Read">
+      <UniqueIdentifier>{14b66f11-098b-4301-bce7-c8831cdcd34c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Shader">
+      <UniqueIdentifier>{768237ed-884a-4c00-bb4e-eecfa38501de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\txt">
+      <UniqueIdentifier>{98a26a85-4601-42d3-ada3-5b7a08254d65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DLL">
+      <UniqueIdentifier>{739d8936-f79c-43e1-9c2e-dcc4687e1999}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="源.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Block\block.cpp">
+      <Filter>源文件\Block</Filter>
+    </ClCompile>
+    <ClCompile Include="Block\blocks.cpp">
+      <Filter>源文件\Block</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\Camera.cpp">
+      <Filter>源文件\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Environment\sky.cpp">
+      <Filter>源文件\Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="Generate\PerlinNoise.cpp">
+      <Filter>源文件\Generate</Filter>
+    </ClCompile>
+    <ClCompile Include="Light\LightDirectional.cpp">
+      <Filter>源文件\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Light\LightPoint.cpp">
+      <Filter>源文件\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Light\LightSpot.cpp">
+      <Filter>源文件\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh\Mesh.cpp">
+      <Filter>源文件\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh\Model.cpp">
+      <Filter>源文件\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Read\glad.c">
+      <Filter>源文件\Read</Filter>
+    </ClCompile>
+    <ClCompile Include="Read\Material.cpp">
+      <Filter>源文件\Read</Filter>
+    </ClCompile>
+    <ClCompile Include="Read\Shader.cpp">
+      <Filter>源文件\Read</Filter>
+    </ClCompile>
+    <ClCompile Include="glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Block\block.h">
+      <Filter>源文件\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="Block\blocks.h">
+      <Filter>源文件\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\Camera.h">
+      <Filter>源文件\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Environment\sky.h">
+      <Filter>源文件\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Generate\PerlinNoise.h">
+      <Filter>源文件\Generate</Filter>
+    </ClInclude>
+    <ClInclude Include="Light\LightDirectional.h">
+      <Filter>源文件\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Light\LightPoint.h">
+      <Filter>源文件\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Light\LightSpot.h">
+      <Filter>源文件\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh\Mesh.h">
+      <Filter>源文件\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh\Model.h">
+      <Filter>源文件\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Read\Material.h">
+      <Filter>源文件\Read</Filter>
+    </ClInclude>
+    <ClInclude Include="Read\Shader.h">
+      <Filter>源文件\Read</Filter>
+    </ClInclude>
+    <ClInclude Include="Read\stb_image.h">
+      <Filter>源文件\Read</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shader\fragmentSource.frag">
+      <Filter>源文件\Shader</Filter>
+    </None>
+    <None Include="Shader\fragmentSource_Mesh.frag">
+      <Filter>源文件\Shader</Filter>
+    </None>
+    <None Include="Shader\shadowShader.frag">
+      <Filter>源文件\Shader</Filter>
+    </None>
+    <None Include="Shader\shadowShader.vert">
+      <Filter>源文件\Shader</Filter>
+    </None>
+    <None Include="Shader\shiyan2.frag">
+      <Filter>源文件\Shader</Filter>
+    </None>
+    <None Include="Shader\shiyan2.vert">
+      <Filter>源文件\Shader</Filter>
+    </None>
+    <None Include="Shader\skybox.frag">
+      <Filter>源文件\Shader</Filter>
+    </None>
+    <None Include="Shader\skybox.vert">
+      <Filter>源文件\Shader</Filter>
+    </None>
+    <None Include="Shader\TEXTshader.frag">
+      <Filter>源文件\Shader</Filter>
+    </None>
+    <None Include="Shader\TEXTshader.vert">
+      <Filter>源文件\Shader</Filter>
+    </None>
+    <None Include="Shader\vertexSource.vert">
+      <Filter>源文件\Shader</Filter>
+    </None>
+    <None Include="Shader\vertexSource_Mesh.vert">
+      <Filter>源文件\Shader</Filter>
+    </None>
+    <None Include="packages.config" />
+    <None Include="DLL\freetype.dll">
+      <Filter>源文件\DLL</Filter>
+    </None>
+    <None Include="DLL\msvcp140d.dll">
+      <Filter>源文件\DLL</Filter>
+    </None>
+    <None Include="DLL\ucrtbased.dll">
+      <Filter>源文件\DLL</Filter>
+    </None>
+    <None Include="DLL\vcruntime140d.dll">
+      <Filter>源文件\DLL</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="txt\Arial.ttf">
+      <Filter>源文件\txt</Filter>
+    </Font>
+  </ItemGroup>
+</Project>

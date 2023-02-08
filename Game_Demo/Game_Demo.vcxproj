@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a816cde6-48cd-4001-9e53-6e5d9d730b83}</ProjectGuid>
+    <RootNamespace>GameDemo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;BT_THREADSAFE=1;BT_USE_DOUBLE_PRECISION;_DEBUG=1;B3_USE_CLEW;GLEW_STATIC;INCLUDE_CLOTH_DEMOS;STATIC_LINK_SPD_PLUGIN</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
+      <AdditionalIncludeDirectories>..\VS_Environment\freetype\include;..\VS_Environment\glutdlls37beta;..\VS_Environment\glm;..\VS_Environment\glfw-3.3.8.bin.WIN64\include;..\VS_Environment\glew-2.1.0\include;..\VS_Environment\Bullet3D\include\clew;..\VS_Environment\Bullet3D\include</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SupportJustMyCode>false</SupportJustMyCode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\VS_Environment\freetype\release dll\win64;..\VS_Environment\glfw-3.3.8.bin.WIN64\lib-vc2022;..\VS_Environment\glew-2.1.0\lib\Release\x64;..\VS_Environment\glad\include;..\VS_Environment\glutdlls37beta\lib;..\VS_Environment\Bullet3D\bin</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3_mt.lib;glew32s.lib;glew32.lib;GlU32.Lib;glut.lib;freetype.lib;App_BulletExampleBrowser_vs2010_x64_debug.lib;App_HelloBulletRobotics_vs2010_x64_debug.lib;App_PhysicsServer_SharedMemory_GUI_vs2010_x64_debug.lib;App_PhysicsServer_SharedMemory_VR_vs2010_x64_debug.lib;App_PhysicsServer_SharedMemory_vs2010_x64_debug.lib;App_PhysicsServerSharedMemoryBridgeTCP_vs2010_x64_debug.lib;App_PhysicsServerSharedMemoryBridgeUDP_vs2010_x64_debug.lib;App_PhysicsServerTCP_vs2010_x64_debug.lib;App_PhysicsServerUDP_vs2010_x64_debug.lib;App_RobotSimulator_vs2010_x64_debug.lib;Bullet2FileLoader_vs2010_x64_debug.lib;Bullet3Collision_vs2010_x64_debug.lib;Bullet3Common_vs2010_x64_debug.lib;Bullet3Dynamics_vs2010_x64_debug.lib;Bullet3Geometry_vs2010_x64_debug.lib;Bullet3OpenCL_clew_vs2010_x64_debug.lib;BulletCollision_vs2010_x64_debug.lib;BulletDynamics_vs2010_x64_debug.lib;BulletExampleBrowserLib_vs2010_x64_debug.lib;BulletFileLoader_vs2010_x64_debug.lib;BulletInverseDynamics_vs2010_x64_debug.lib;BulletInverseDynamicsUtils_vs2010_x64_debug.lib;BulletRobotics_vs2010_x64_debug.lib;BulletSoftBody_vs2010_x64_debug.lib;BulletWorldImporter_vs2010_x64_debug.lib;BulletXmlWorldImporter_vs2010_x64_debug.lib;BussIK_vs2010_x64_debug.lib;clsocket_vs2010_x64_debug.lib;ConvexDecomposition_vs2010_x64_debug.lib;enet_vs2010_x64_debug.lib;gtest_vs2010_x64_debug.lib;gwen_vs2010_x64_debug.lib;HACD_vs2010_x64_debug.lib;LinearMath_vs2010_x64_debug.lib;OpenGL_Window_vs2010_x64_debug.lib;Test_PhysicsClientTCP_vs2010_x64_debug.lib;Test_PhysicsClientUDP_vs2010_x64_debug.lib;Test_PhysicsServerDirect_vs2010_x64_debug.lib;Test_PhysicsServerInProcessExampleBrowser_vs2010_x64_debug.lib;Test_PhysicsServerLoopBack_vs2010_x64_debug.lib;Test_SharedMemoryPhysicsClient_vs2010_x64_debug.lib;vhacd_vs2010_x64_debug.lib</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;BT_THREADSAFE=1;BT_USE_DOUBLE_PRECISION;_DEBUG=1;B3_USE_CLEW;GLEW_STATIC;INCLUDE_CLOTH_DEMOS;STATIC_LINK_SPD_PLUGIN</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\VS_Environment\freetype\include;..\VS_Environment\glutdlls37beta;..\VS_Environment\glm;..\VS_Environment\glfw-3.3.8.bin.WIN64\include;..\VS_Environment\glew-2.1.0\include;..\VS_Environment\Bullet3D\include\clew;..\VS_Environment\Bullet3D\include</AdditionalIncludeDirectories>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <Optimization>Disabled</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\VS_Environment\freetype\release dll\win64;..\VS_Environment\glfw-3.3.8.bin.WIN64\lib-vc2022;..\VS_Environment\glew-2.1.0\lib\Release\x64;..\VS_Environment\glad\include;..\VS_Environment\glutdlls37beta\lib;..\VS_Environment\Bullet3D\bin</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3_mt.lib;glew32s.lib;glew32.lib;GlU32.Lib;glut.lib;freetype.lib;App_BulletExampleBrowser_vs2010_x64_debug.lib;App_HelloBulletRobotics_vs2010_x64_debug.lib;App_PhysicsServer_SharedMemory_GUI_vs2010_x64_debug.lib;App_PhysicsServer_SharedMemory_VR_vs2010_x64_debug.lib;App_PhysicsServer_SharedMemory_vs2010_x64_debug.lib;App_PhysicsServerSharedMemoryBridgeTCP_vs2010_x64_debug.lib;App_PhysicsServerSharedMemoryBridgeUDP_vs2010_x64_debug.lib;App_PhysicsServerTCP_vs2010_x64_debug.lib;App_PhysicsServerUDP_vs2010_x64_debug.lib;App_RobotSimulator_vs2010_x64_debug.lib;Bullet2FileLoader_vs2010_x64_debug.lib;Bullet3Collision_vs2010_x64_debug.lib;Bullet3Common_vs2010_x64_debug.lib;Bullet3Dynamics_vs2010_x64_debug.lib;Bullet3Geometry_vs2010_x64_debug.lib;Bullet3OpenCL_clew_vs2010_x64_debug.lib;BulletCollision_vs2010_x64_debug.lib;BulletDynamics_vs2010_x64_debug.lib;BulletExampleBrowserLib_vs2010_x64_debug.lib;BulletFileLoader_vs2010_x64_debug.lib;BulletInverseDynamics_vs2010_x64_debug.lib;BulletInverseDynamicsUtils_vs2010_x64_debug.lib;BulletRobotics_vs2010_x64_debug.lib;BulletSoftBody_vs2010_x64_debug.lib;BulletWorldImporter_vs2010_x64_debug.lib;BulletXmlWorldImporter_vs2010_x64_debug.lib;BussIK_vs2010_x64_debug.lib;clsocket_vs2010_x64_debug.lib;ConvexDecomposition_vs2010_x64_debug.lib;enet_vs2010_x64_debug.lib;gtest_vs2010_x64_debug.lib;gwen_vs2010_x64_debug.lib;HACD_vs2010_x64_debug.lib;LinearMath_vs2010_x64_debug.lib;OpenGL_Window_vs2010_x64_debug.lib;Test_PhysicsClientTCP_vs2010_x64_debug.lib;Test_PhysicsClientUDP_vs2010_x64_debug.lib;Test_PhysicsServerDirect_vs2010_x64_debug.lib;Test_PhysicsServerInProcessExampleBrowser_vs2010_x64_debug.lib;Test_PhysicsServerLoopBack_vs2010_x64_debug.lib;Test_SharedMemoryPhysicsClient_vs2010_x64_debug.lib;vhacd_vs2010_x64_debug.lib</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Block\block.cpp" />
+    <ClCompile Include="Block\blocks.cpp" />
+    <ClCompile Include="Control\Camera.cpp" />
+    <ClCompile Include="Environment\sky.cpp" />
+    <ClCompile Include="Generate\PerlinNoise.cpp" />
+    <ClCompile Include="glad.c" />
+    <ClCompile Include="Light\LightDirectional.cpp" />
+    <ClCompile Include="Light\LightPoint.cpp" />
+    <ClCompile Include="Light\LightSpot.cpp" />
+    <ClCompile Include="Mesh\Mesh.cpp" />
+    <ClCompile Include="Mesh\Model.cpp" />
+    <ClCompile Include="Read\glad.c" />
+    <ClCompile Include="Read\Material.cpp" />
+    <ClCompile Include="Read\Shader.cpp" />
+    <ClCompile Include="源.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Block\block.h" />
+    <ClInclude Include="Block\blocks.h" />
+    <ClInclude Include="Control\Camera.h" />
+    <ClInclude Include="Environment\sky.h" />
+    <ClInclude Include="Generate\PerlinNoise.h" />
+    <ClInclude Include="Light\LightDirectional.h" />
+    <ClInclude Include="Light\LightPoint.h" />
+    <ClInclude Include="Light\LightSpot.h" />
+    <ClInclude Include="Mesh\Mesh.h" />
+    <ClInclude Include="Mesh\Model.h" />
+    <ClInclude Include="Read\Material.h" />
+    <ClInclude Include="Read\Shader.h" />
+    <ClInclude Include="Read\stb_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DLL\freetype.dll" />
+    <None Include="DLL\msvcp140d.dll" />
+    <None Include="DLL\ucrtbased.dll" />
+    <None Include="DLL\vcruntime140d.dll" />
+    <None Include="packages.config" />
+    <None Include="Shader\fragmentSource.frag" />
+    <None Include="Shader\fragmentSource_Mesh.frag" />
+    <None Include="Shader\shadowShader.frag" />
+    <None Include="Shader\shadowShader.vert" />
+    <None Include="Shader\shiyan2.frag" />
+    <None Include="Shader\shiyan2.vert" />
+    <None Include="Shader\skybox.frag" />
+    <None Include="Shader\skybox.vert" />
+    <None Include="Shader\TEXTshader.frag" />
+    <None Include="Shader\TEXTshader.vert" />
+    <None Include="Shader\vertexSource.vert" />
+    <None Include="Shader\vertexSource_Mesh.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="txt\Arial.ttf" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\Assimp.redist.3.0.0\build\native\Assimp.redist.targets" Condition="Exists('..\packages\Assimp.redist.3.0.0\build\native\Assimp.redist.targets')" />
+    <Import Project="..\packages\Assimp.3.0.0\build\native\Assimp.targets" Condition="Exists('..\packages\Assimp.3.0.0\build\native\Assimp.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Assimp.redist.3.0.0\build\native\Assimp.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Assimp.redist.3.0.0\build\native\Assimp.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\Assimp.3.0.0\build\native\Assimp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Assimp.3.0.0\build\native\Assimp.targets'))" />
+  </Target>
+</Project>
