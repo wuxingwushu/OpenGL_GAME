@@ -17,7 +17,7 @@ OpenGL_GAME
     │             glew-2.1.0
     │             glfw-3.3.8.bin.WIN64
     │             glm
-	│             glutdlls37beta
+    │             glutdlls37beta
     └ Game_Demo ┐
     │			...
     └ packages ┐
